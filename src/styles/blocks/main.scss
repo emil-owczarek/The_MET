@@ -1,0 +1,42 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 0;
+
+  &__strapline {
+    color: var(--Accent-main, #d12d35);
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  &__title {
+    text-align: left;
+    color: var(--Main-dark, #161616);
+    font-family: "Cinzel", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    padding-bottom: 32px;
+
+    @media (min-width: 639px) {
+      font-size: 48px;
+    }
+
+    &--secondary {
+      text-align: center;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.first-section {
+  @media (min-width: 639px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

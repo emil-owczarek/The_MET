@@ -1,0 +1,42 @@
+@mixin visually-hidden() {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.burger {
+  &::before {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    content: "";
+    background-image: url(./src/images/Icon-Burger-menu.svg);
+    background-size: cover;
+  }
+
+  &::after {
+    display: none;
+    width: 32px;
+    height: 32px;
+    content: "";
+    background-image: url(./src/images/Icon-Burger-menu-hover.svg);
+    background-size: cover;
+  }
+
+  &:hover {
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: inline-block;
+    }
+  }
+
+  &__label {
+    @include visually-hidden();
+  }
+}

@@ -1,0 +1,43 @@
+.header {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./src/images/big-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 20px 300px;
+
+  @media (min-width: 639px) {
+    padding: 0 40px 250px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 40px 500px;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    box-shadow: 1px;
+
+    @media (min-width: 639px) {
+      font-size: 64px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 80px;
+    }
+  }
+}

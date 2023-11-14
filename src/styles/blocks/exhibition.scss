@@ -1,0 +1,133 @@
+.exhibition {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+
+  &__title {
+    color: var(--Main-dark, #161616);
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+    letter-spacing: -1.5px;
+    padding-bottom: 8px;
+
+    @media (min-width: 639px) {
+      font-size: 48px;
+    }
+  }
+
+  &__description {
+    max-width: 300px;
+    margin: 0 auto;
+    color: var(--Main-dark, #161616);
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 168.75% */
+    padding-bottom: 48px;
+  }
+
+  &__item {
+    padding-bottom: 48px;
+  }
+
+  &__item-title {
+    color: var(--Accent-main, #d12d35);
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px; /* 168.75% */
+    cursor: pointer;
+  }
+
+  &__item-date {
+    color: var(--Main-dark, #161616);
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 168.75% */
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding-bottom: 24px;
+
+    @media (min-width: 639px) {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    &--3 {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+
+      @media (min-width: 639px) and (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    &--last {
+      @media (min-width: 639px) {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+    &--first {
+      object-position: left;
+    }
+
+    &--last {
+      object-position: right;
+    }
+
+    &--second-mandala {
+      @media (min-width: 639px) and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    color: #fff;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px; /* 168.75% */
+    background-color: #d12d35;
+    padding: 14.5px 0;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+
+    &:hover {
+      background-color: #ae1c23;
+    }
+
+    &:active {
+      background-color: #eb343d;
+    }
+  }
+}
