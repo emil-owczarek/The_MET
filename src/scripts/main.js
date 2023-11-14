@@ -46,7 +46,7 @@ consentForm.addEventListener('submit', function(e) {
 
   modalText.innerHTML = `
     <div class="modal__content--loading">
-        <img src="/loading.svg" class="loading">
+        <img src="loading.svg" class="loading">
         <p id="upload-text">Uploading your data to the dark web...</p>
     </div>`;
 
@@ -58,7 +58,7 @@ consentForm.addEventListener('submit', function(e) {
   setTimeout(function() {
     document.getElementById('modal-inner').innerHTML = `
       <div class="modal__gif">
-          <img src="/talking-head.gif">
+          <img src="talking-head.gif">
       </div>
       <h2 class="modal__title">Thanks <span class="modal__name-display">${fullName}</span>, you smarty pants!</h2>
       <p class="modal__paragraph">I just sold the rights to your eternal soul.</p>
