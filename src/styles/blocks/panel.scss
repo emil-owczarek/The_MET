@@ -10,6 +10,10 @@
   overflow-x: hidden;
   padding-top: 50px;
   transition: 0.5s;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 }
 
 .sidepanel a {
@@ -44,6 +48,10 @@
   color: white;
   padding: 10px 15px;
   border: none;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 }
 
 .openbtn:hover {

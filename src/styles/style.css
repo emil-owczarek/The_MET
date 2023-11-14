@@ -945,6 +945,11 @@ table {
   padding-top: 50px;
   transition: 0.5s;
 }
+@media (max-width: 639px) {
+  .sidepanel {
+    display: none;
+  }
+}
 
 .sidepanel a {
   padding: 8px 8px 8px 32px;
@@ -978,6 +983,11 @@ table {
   color: white;
   padding: 10px 15px;
   border: none;
+}
+@media (max-width: 639px) {
+  .openbtn {
+    display: none;
+  }
 }
 
 .openbtn:hover {
